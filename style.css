@@ -174,19 +174,21 @@ nav .navigation ul li a:hover{
 #features .fea-box i{
     font-size: 2.3rem;
     color: rgb(44, 44, 80);
+    padding: 10px;
 }
 
 #feature .fea-box h3{
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(46, 46, 59);
-    padding: 13px 0 7px 0;
+    padding: 13px 0 7px 10px;
 }
 
 #feature .fea-box p{
     font-size: 1rem;
     font-weight: 400;
     color: rgb(70, 70, 87);
+    padding: 10px;
 }
 
 /* course */
@@ -800,6 +802,15 @@ footer .copyright .pro-links i:hover{
     #features {
         padding: 8vw 4vw 0 4vw;
     }
+    #features .fea-box p{
+        padding: 10px;
+    }
+    #features .fea-box h3{
+        padding: 10px;
+    }
+    #features .fea-box i{
+        padding: 10px;
+    }
     #course {
         padding: 8vw 4vw 0 4vw;
     }
@@ -856,6 +867,9 @@ footer .copyright .pro-links i:hover{
 @media (max-width: 475px) {
     #home{
         padding-top: 50px;
+    }
+    #features .fea-box{
+        text-align: center;
     }
     #registration {
         display: flex;
