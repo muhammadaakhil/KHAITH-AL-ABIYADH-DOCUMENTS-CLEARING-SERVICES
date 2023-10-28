@@ -792,6 +792,7 @@ footer .copyright .pro-links i:hover{
     }
     #home {
         padding-top: 0px;
+        height: 60vh;
     }
     #home p{
         width: 90%;
@@ -853,6 +854,10 @@ footer .copyright .pro-links i:hover{
 }
 
 @media (max-width: 475px) {
+    #home {
+        padding-top: 0px;
+        height: 50vh;
+    }
     #registration {
         display: flex;
         flex-direction: column;
