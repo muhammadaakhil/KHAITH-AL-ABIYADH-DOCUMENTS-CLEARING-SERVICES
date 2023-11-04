@@ -47,8 +47,9 @@ nav{
 }
 
 nav img{
-    width: 150px;
+    width: 130px;
     cursor: pointer;
+    height: 80px;
 }
 
 nav .navigation{

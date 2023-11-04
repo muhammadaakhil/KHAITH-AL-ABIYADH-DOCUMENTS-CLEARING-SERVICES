@@ -9,16 +9,17 @@
 
 
     <link rel="stylesheet" href="style.css">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+     
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    
+    
 </head>
 <body>
 
     <!-- Navigation -->
     <header>
     <nav class="header">
-        <img src="logo.svg" alt="">
+        <img src="Ichukka Logo blue copy.png" alt="">
         <div class="navigation">
             <ul>
                 <i id="menu-close" class="fas fa-times"></i>
@@ -76,64 +77,48 @@
 
         <div class="form">
             <h4>Let's Connect</h4>
-            <p>Integer at lorem eget diam facilisis lancinia ac massa.</p>
+            <p>We're excited to hear from you! Our "Contact us" page is the gateway to reaching out and 
+            establishing a connection.</p>
             <div class="form-row">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Email">
+                <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxlNIW4QZz-6XX-Ett59yPllsud2iaB1xjkhZ8cJXbXt8S222jfkLxeH8LATKVHOprg/exec">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Email">
             </div>
             <div class="form-col">
-                <input type="text" placeholder="Subject">
+                <input type="text" name="subject" placeholder="Subject">
             </div>
             <div class="form-col">
-                <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+                <textarea name="message" id="" cols="30" rows="8"  placeholder="How can we help?"></textarea>
             </div>
             <div class="form-col">
-                <button>Send Message</button>
+               <button>Send Message</button>
+                </form>
             </div>
         </div>
     </section>
-
+   
     <section id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.402702812602!2d55.2459846742576!3d25.155876833375206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69a2874328c1%3A0xda733ac5fc56b50f!2sEiffel%20Accommodation%202%20Enoc%20Accommodation%206!5e0!3m2!1sen!2sin!4v1697932960288!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-  
-    
-
-  
-
     <footer>
         <div class="footer-col">
-            <h3>Top Products</h3>
-            <li>Manage Reputation</li>
-            <li>Power Tools</li>
-            <li>Managed Website</li>
-            <li>Marketing Service</li>
+            <h3>Services</h3>
+            <li>GDRFA Online</li>
+            <li>DHA Medical</li>
+            <li>Occupational Health Card</li>
+            <li>Emirates ID</li>
         </div>
 
         <div class="footer-col">
             <h3>Quick Links</h3>
-            <li>Jobs</li>
-            <li>Brand Assets</li>
-            <li>Investor Relations</li>
-            <li>Terms of Service</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contacts</li>
         </div>
 
-        <div class="footer-col">
-            <h3>Features</h3>
-            <li>Manage Reputation</li>
-            <li>Power Tools</li>
-            <li>Managed Website</li>
-            <li>Marketing Service</li>
-        </div>
-
-        <div class="footer-col">
-            <h3>Resources</h3>
-            <li>Guides</li>
-            <li>Research</li>
-            <li>Experts</li>
-            <li>Marketing Service</li>
-        </div>
+        
 
         <div class="footer-col">
             <h3>Newsletter</h3>
@@ -145,7 +130,6 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright 2023 All rights reserved | This template is made by Aakhil</p>
             <div class="pro-links">
                 <i class="fab fa-facebook-f"></i> 
                 <i class="fab fa-instagram"></i> 
@@ -162,6 +146,7 @@
             $('nav .navigation ul').removeClass('active')
         });
     </script>
-    
+
+  
 </body>
 </html>
