@@ -80,7 +80,7 @@
             <p>We're excited to hear from you! Our "Contact us" page is the gateway to reaching out and 
             establishing a connection.</p>
             <div class="form-row">
-                <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbyFzswBXQiq7IVZO4WAJVqCUTpYWLXrf-QEeyN874AmHmKzc_EAyhfBg6Kr9-IxZGXxdA/exec">
+                <form id="submit-form"  action="">
                 <input type="text" name="name" placeholder="Your Name">
                 <input type="text" name="email" placeholder="Email">
             </div>
@@ -146,6 +146,26 @@
             $('nav .navigation ul').removeClass('active')
         });
     </script>
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbyFzswBXQiq7IVZO4WAJVqCUTpYWLXrf-QEeyN874AmHmKzc_EAyhfBg6Kr9-IxZGXxdA/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 
   
 </body>
